@@ -1,0 +1,48 @@
+:root {
+  --main-color: white; /*able to use this same color throughout*/
+}
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* image doesn't move*/
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  font-family: "Orbitron", sans-serif;
+  color: var(--main-color);
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid yellow;
+
+  width: 80%;
+  margin: 0 auto; /*how you center the box in the whole page.. automatically goes to the left*/
+  padding: 10px;
+  border-radius: 13px;
+
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  opacity: 90%;
+  
+  -webkit-box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 4px -4px 15px 0px #FF1F1F, 12px -11px 7px 0px #FF9376, 20px -5px 7px 0px #FFE264, 20px 6px 7px 0px #F6FF33, 13px 12px 17px 0px #FF9527, 2px 17px 17px 0px #FF0000, -9px 21px 18px 0px #FFF212, -9px 6px 11px 0px #FF0808, -11px -9px 11px 0px #FFFA17, -11px -9px 11px 0px #FFFA17, 5px 5px 15px 5px rgba(0,0,0,0);
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) /*centers it*/
+}
